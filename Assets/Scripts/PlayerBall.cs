@@ -52,6 +52,7 @@ public class PlayerBall : MonoBehaviour
             GetComponent<AudioSource>().Play();
             audio.Play();
             other.gameObject.SetActive(false);
+            manager.GetItem(itemCount);
         }
         else if (other.tag == "Finish")
         {
